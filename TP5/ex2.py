@@ -2,7 +2,7 @@
 def lectMat (n) :
     A = []
     for i in range (n):
-        Li = eval(input(f" ligne : { i :} : "))
+        Li = eval(input (f" ligne : { i :} : "))
         Li = list(Li)
         A.append(Li)
     return (A)
@@ -14,14 +14,20 @@ def affichMat(A) :
             print(f"{A[i][j]:>+.2f}\t", end =' ')
         print(f"|{A[i][n]:>+.2f}")
 
-def gaussElimin(M) :
+def gaussElimin2(M) :
     n = len(M)
     for k in range(n-1):
         if abs(M[k][k]) < 1e-16:
-            print("attention! pivot nul")
-            exit()
+            p = k+1
+            if M[p][k] > 1e-16:
+                for m in range (0,n+1):
+                    M[p][m]+=M[k][m]
+                    M[k][m]-=M[p][m]
+                    M[p][m]-=M[k][m]
+            else:
+                p+=1
         for i in range(k+1, n):
-            factor = M[i][k] / M[k][k]
+            factor = M[i][k] / M[k][k]     
             for j in range(k, n+1):
                 M[i][j] -= factor * M[k][j]
 
@@ -37,14 +43,14 @@ def Remontee(U):
             U[j][n] -= U[j][i] * x[i]
             U[j][i] = 0
     return x
-#Execution du programme
+#Execution du Programme
 n = input('Donner la taille du système : ')
 n = int(n)
 print("Donnez la matrice augmentée : ")
 A = lectMat(n)
 print("matrice avant élimination : ")
 affichMat(A)
-gaussElimin(A)
+gaussElimin2(A)
 print("matrice après élimination : ")
 affichMat(A)
 print("solution : ")

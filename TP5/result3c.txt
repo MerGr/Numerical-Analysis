@@ -1,0 +1,26 @@
+Donner la taille du système : Donnez la matrice augmentée : 
+ ligne 0:  ligne 1:  ligne 2: Donnez la tolérance : Donnez le vecteur initial x0 : Donnez Kmax : 
+Matrice augmentée : 
++2.00	 -1.00	 +0.00	 |+1.00
++1.00	 -4.00	 -1.00	 |+0.00
++1.00	 +0.00	 +3.00	 |-8.00
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+DEBUG : n =  3
+solution approchée :
++1.00	 +1.00	 -3.00	 le nombre d'itérations : 16
+le résidue : 3.021697988609455e-08
