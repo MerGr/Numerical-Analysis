@@ -1,4 +1,4 @@
-from math import *
+from math import cos, sin
 def E1(value):
     return (1-cos(value))/sin(value)**2
 

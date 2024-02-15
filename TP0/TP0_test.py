@@ -1,4 +1,4 @@
-from math import *
+from math import cos, pi
 
 def som(a,b):
     s=a+b
@@ -32,7 +32,7 @@ print("   *  *     *********")
 print("   * 0    0 ******   *")
 print(" *******************")
 print("     ***********    *")
-x,y,z=eval(input("Input your messages: "))
+x,y,z=eval(input("Input 3 messages separated by ',' and written between ' \" ': "))
 if(x!="skip"):
      print("Message 1:",x
       ,"\nMessage 2:",y
