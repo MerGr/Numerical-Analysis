@@ -1,3 +1,7 @@
+# SMI4 GTP2 Poste 002 TP1_Ex1
+# Graoui Abderrahmane
+# TP1 Exercice 1
+#----------------------------------------------------
 from numpy import int32
 
 b=int32 (2**31 -1)

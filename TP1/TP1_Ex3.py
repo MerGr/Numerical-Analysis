@@ -1,3 +1,7 @@
+# SMI4 GTP2 Poste 002 TP1_Ex3
+# Graoui Abderrahmane
+# TP1 Exercice 3
+#----------------------------------------------------
 from math import cos, sin
 def E1(value):
     return (1-cos(value))/sin(value)**2

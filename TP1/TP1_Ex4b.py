@@ -1,3 +1,7 @@
+# SMI4 GTP2 Poste 002 TP1_Ex4b
+# Graoui Abderrahmane
+# TP1 Exercice 4 Question 4
+#----------------------------------------------------
 from math import log
 
 def integral(n):
@@ -12,7 +16,6 @@ def inverse_integral(twon_integral,n):
     else:
         return (1/n - twon_integral)/10
     
-
 term=input('Value of n exponant for integral In: ')
 term=int(term)
 print('from 0 -------------------------->',term)
@@ -31,6 +34,7 @@ print(2*int(term),'\t|',twon_value)
 for i in range(2*int(term)-1,int(term)-1,-1):
     print(i,'\t|','{:e}'.format(inverse_integral(twon_value,i+1)))
     twon_value=inverse_integral(twon_value,i+1)
+
     
 #Dans la première méthode, on calcule l'intégrale à l'aide de la machine, la machine donne la valeur + erreur machine non nul
 #Quand la fonction du calcul s'éxecute récursivement, l'erreur machine s'augmente par facteur de 10 jusqu'à n=13 ou n=14 où dans ce cas on aura des

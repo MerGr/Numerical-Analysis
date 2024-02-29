@@ -1,0 +1,31 @@
+# Nmax = 20
+
+PS D:\Numerical-Analysis\TP2> python TP2_Exe1.py
+Le nom de la fonction : g2
+Intervalle a,b : 1.,3.
+x0 = 2.
+Nmax = 20
+EPS = 1.e-7
+ERREUR ! Nmax atteinte !
+
+# Nmax = 200
+
+PS D:\Numerical-Analysis\TP2> python TP2_Exe1.py
+Le nom de la fonction : g2
+Intervalle a,b : 1.,3.
+x0 = 2.
+Nmax = 200
+EPS = 1.e-7
+ERREUR ! Nmax atteinte !
+
+# Nmax = 2000
+
+PS D:\Numerical-Analysis\TP2> python TP2_Exe1.py
+Le nom de la fonction : g2
+Intervalle a,b : 1.,3.
+x0 = 2.
+Nmax = 2000
+EPS = 1.e-7
+ERREUR ! Nmax atteinte !
+
+# Dans tous les cas, la fonction g2 ne converge pas vers la racine de l'intervalle [1,3], g2 est divergente.
